@@ -1,0 +1,37 @@
+{
+  "name": "next-starter",
+  "version": "1.1.0",
+  "description": "Next.js starter-lite styled Chakra UI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "npm run build && next export",
+    "start": "next start",
+    "test": "jest"
+  },
+  "author": "Kenny Mark",
+  "license": "MIT",
+  "homepage": "https://kennymark.com",
+  "dependencies": {
+    "@chakra-ui/core": "next",
+    "@chakra-ui/theme": "^1.0.0-rc.0",
+    "@hookform/error-message": "0.0.4",
+    "axios": "^0.19.2",
+    "easy-peasy": "^3.3.1",
+    "next": "canary",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.4.1",
+    "react-query": "^2.5.7-tsnext.1",
+    "react-query-devtools": "^1.0.12"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.0.23",
+    "@types/react": "^16.9.43",
+    "jest": "^26.4.1",
+    "ts-jest": "^26.2.0",
+    "typescript": "^3.9.7"
+  }
+}
