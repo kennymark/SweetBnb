@@ -1,6 +1,5 @@
 ## Next Starter Lite by @kennymark
-
-
+Simple Next.js project for getting started on simple development
 
 ## Tech Stack
 
