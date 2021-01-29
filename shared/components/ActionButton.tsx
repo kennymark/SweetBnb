@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, ButtonProps } from '@chakra-ui/core'
+import { Button, ButtonProps } from '@chakra-ui/react'
 
 interface Props {
   children?: any;

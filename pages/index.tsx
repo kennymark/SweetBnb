@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Flex, Box } from "@chakra-ui/core";
+import { Flex, Box } from "@chakra-ui/react";
 
 function IndexPage() {
   return (

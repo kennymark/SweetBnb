@@ -1,4 +1,4 @@
-import { Box, Text, Flex } from "@chakra-ui/core";
+import { Box, Text, Flex } from "@chakra-ui/react";
 
 
 function Footer() {

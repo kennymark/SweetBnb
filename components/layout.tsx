@@ -1,6 +1,6 @@
 import Header from "./nav";
 import Footer from "./footer";
-import { Box, Flex } from '@chakra-ui/core'
+import { Box, Flex } from '@chakra-ui/react'
 
 
 interface Props {

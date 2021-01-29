@@ -1,4 +1,4 @@
-import { Button, Menu, MenuButton, MenuGroup, MenuItem, MenuList } from '@chakra-ui/core';
+import { Button, Menu, MenuButton, MenuGroup, MenuItem, MenuList } from '@chakra-ui/react';
 import React from 'react';
 import ActiveLink from './../../shared/components/ActiveLink';
 

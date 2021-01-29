@@ -1,4 +1,4 @@
-import theme from '@chakra-ui/theme'
+import theme from '@chakra-ui/react'
 
 const customTheme = {
   config: {

@@ -1,4 +1,4 @@
-import { CSSReset, ChakraProvider, Progress } from '@chakra-ui/core';
+import { ChakraProvider, Progress } from '@chakra-ui/react';
 import { StoreProvider } from 'easy-peasy';
 import "../css/index.css";
 import store from "../shared/store";
@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={theme}>
-      <CSSReset />
       <StoreProvider store={store}>
         {showFetch && <Progress size="lg" value={100} width='100%' isAnimated position='fixed' top={0} colorScheme='green' />}
         <Component {...pageProps} />

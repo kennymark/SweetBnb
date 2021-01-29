@@ -1,7 +1,6 @@
-import { Box, Flex, Button, } from "@chakra-ui/core";
+import { Box, Flex, Button, } from "@chakra-ui/react";
 import React from "react";
 import useAuth from "../shared/hooks/useAuth";
-
 import MenuLink from "../shared/components/MenuLink";
 import { buttonProps } from "../shared/utils/form";
 
