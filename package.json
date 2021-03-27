@@ -37,6 +37,6 @@
     "@types/react": "^16.9.43",
     "jest": "^26.4.1",
     "ts-jest": "^26.2.0",
-    "typescript": "^3.9.7"
+    "typescript": "^4.2.3"
   }
 }
