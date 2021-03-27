@@ -1,6 +1,9 @@
-import Header from "./nav";
-import Footer from "./footer";
-import { Box, Flex } from '@chakra-ui/react'
+
+import { Container } from '@chakra-ui/react';
+import { useStoreActions } from 'easy-peasy';
+import { useEffect } from 'react';
+import results from '../airbnb-listings.json';
+import Header from './header';
 
 
 interface Props {
@@ -8,16 +11,24 @@ interface Props {
   children?: any;
 }
 
-function Layout({ children, sm }: Props) {
+function Layout({ children }: Props) {
+  const setProperties = useStoreActions<any, any>(state => state.properties.setProperties)
+
+  useEffect(() => {
+    setProperties(results.slice(1, 28))
+  }, [])
+
+
   return (
-    <Flex direction='column' >
+    <>
       <Header />
-      <Box mx='auto' p={4} maxH='full' minW={sm ? ['', 600] : ['', 700, 700, 900]} maxWidth={['', '', 1200]} minH='80vh'>
+      <Container maxW='8xl' p={4} pb={20} bg='pink.50' >
+
         {children}
-      </Box>
-      <Footer />
-    </Flex>
+
+      </Container>
+      {/* <Footer /> */}
+    </>
   );
 }
-
 export default Layout;

@@ -4,19 +4,38 @@
 
 
 
-import { createStore, persist } from 'easy-peasy';
-import AuthStore, { AuthModel } from './auth';
+import { action, createStore } from 'easy-peasy';
 
 
 
+const data = {
+  viewPort: {
+    latitude: 51.523305664462555,
+    longitude: -0.09780459021801577,
+    zoom: 11
+  },
 
+  setViewPort: action((state: any, payload) => {
+    state.viewPort = { ...state.viewPort, ...payload }
+  })
+}
+const properties = {
+  all: null,
+  selected: {},
+
+  setProperties: action((state: any, payload) => {
+    state.all = payload
+  }),
+
+  setSelected: action((state: any, payload) => {
+    state.selected = payload
+  })
+
+}
 const store = createStore({
-  auth: persist(AuthStore, { storage: 'localStorage' }),
+  map: data,
+  properties
 });
 
-
-export interface storeModel {
-  auth: AuthModel;
-}
 
 export default store
