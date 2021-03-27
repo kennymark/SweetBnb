@@ -1,8 +1,8 @@
-import { Popover, PopoverTrigger, Button, PopoverContent, PopoverArrow, PopoverCloseButton, PopoverHeader, PopoverBody, Box } from '@chakra-ui/react';
-import { chakra } from '@chakra-ui/system';
+//@ts-nocheck
+import { Button, Popover, PopoverContent, PopoverTrigger } from '@chakra-ui/react';
 import { useStoreActions, useStoreState } from 'easy-peasy';
 import * as React from 'react';
-import ReactMapGL, { FlyToInterpolator, Marker, NavigationControl, Popup } from 'react-map-gl';
+import ReactMapGL, { FlyToInterpolator, Marker, NavigationControl } from 'react-map-gl';
 import MiniCard from '../shared/components/MiniCard';
 import Pin from './pin';
 
